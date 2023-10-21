@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(37, 216, 219);
+}
+
+.reloj {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/relojfondo.png");
+    background-size: cover;
+    border: 1rem solid rgb(58, 9, 233);
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 20px 5px rgb(93, 28, 86);
+}
+
+.reloj2 {
+    width:110px ;
+    height: 25px;
+    position: relative;
+    top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border: solid rgb(58, 9, 233);
+    box-shadow: inset 0px 0px 20px 5px rgb(37, 216, 219);
+    border-radius: 8px;
+
+
+
+    
+}
+
+
+
+
+.reloj:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(70, 62, 159, 0.998);
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.hora {
+    width: 140px;
+    height: 140px;
+}
+
+.minuto {
+    width: 220px;
+    height: 220px;
+}
+
+.segundo {
+    width: 250px;
+    height: 250px; 
+}
+
+.hora::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 90px;
+    background-color: rgb(195, 242, 7);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.minuto::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 130px;
+    background-color: rgb(2, 27, 89);
+    border-radius: 50%;
+    z-index: 11;
+}
+
+.segundo::before {
+    content: '';
+    position: absolute;
+    width: 1.8px;
+    height: 140px;
+    background-color: rgb(252, 15, 63);
+    border-radius: 50%;
+    z-index: 12;
+}
+
+.hora, .minuto, .segundo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
